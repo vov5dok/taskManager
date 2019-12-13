@@ -1,0 +1,10 @@
+# Используем mod_rewrite
+
+# Включаем RewriteEngine
+RewriteEngine On
+
+# Путь от корня сайта до .htaccess
+RewriteBase /route/
+
+# Указываем, что нужно заменить и на что нужно заменить
+RewriteRule ^.*$ index.php [L,QSA]
